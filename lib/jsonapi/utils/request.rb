@@ -3,7 +3,7 @@ module JSONAPI
     module Request
       def setup_request
         @request ||=
-          JSONAPI::Request.new(
+          JSONAPI::RequestParser.new(
             params,
             context: context,
             key_formatter: key_formatter,
